@@ -29,6 +29,11 @@ int main()
 		switch (choose)
 		{
 		case 1:
+			if (!Ktra())
+			{
+				cout << "Tam giac nay la tam giac khong hop le!";
+				break;
+			}
 			cout << "Tam giac co ba dinh: " << endl;
 			cout << a;
 			a.ve_tam_giac();
@@ -39,7 +44,7 @@ int main()
 		case 3:
 			if (!a.Ktra())
 			{
-				cout << "Khong the tinh chu vi!";
+				cout << "Tam giac nay la tam giac khong hop le!";
 				break;
 			}
 			cout << "Chu vi cua tam giac bang " << a.ChuVi();
@@ -47,7 +52,7 @@ int main()
 		case 4:
 			if (!a.Ktra())
 			{
-				cout << "Khong the tinh dien tich!";
+				cout << "Tam giac nay la tam giac khong hop le!";
 				break;
 			}
 			cout << "Dien tich cua tam giac bang " << a.DienTich();
@@ -55,7 +60,7 @@ int main()
 		case 5:
 			if (!a.Ktra())
 			{
-				cout << "Khong the tinh dien tich!";
+				cout << "Tam giac nay la tam giac khong hop le!";
 				break;
 			}
 			cout << "Nhap vector ban muon tinh tien theo: ";
@@ -77,7 +82,7 @@ int main()
 		case 6:
 			if (!a.Ktra())
 			{
-				cout << "Khong the tinh dien tich!";
+				cout << "Tam giac nay la tam giac khong hop le!";
 				break;
 			}
 			cout << "Nhap diem ban muon tam giac quay quanh: ";
@@ -109,7 +114,7 @@ int main()
 		case 7:
 			if (!a.Ktra())
 			{
-				cout << "Khong the tinh dien tich!";
+				cout << "Tam giac nay la tam giac khong hop le!";
 				break;
 			}
 			cout << "Nhap tam vi tu ban muon phong to: ";
@@ -141,7 +146,7 @@ int main()
 		case 8:
 			if (!a.Ktra())
 			{
-				cout << "Khong the tinh dien tich!";
+				cout << "Tam giac nay la tam giac khong hop le!";
 				break;
 			}
 			cout << "Nhap tam vi tu ban muon thu nho: ";

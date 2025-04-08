@@ -146,14 +146,18 @@ bool cDaGiac::ktra_loi() const
 {
 	int n = dinh.size();
 	if (n < 3) return false;
-	bool sign = false;
+	if (n == 3) return true;
+	int chieu = 0;
 	for (int i = 0; i < n; ++i)
 	{
-		float cp = tich_co_huong(dinh[i], dinh[(i + 1) % n], dinh[(i + 2) % n]);
+		const Diem& a = dinh[i];
+		const Diem& b = dinh[(i + 1) % n];
+		const Diem& c = dinh[(i + 2) % n];
+		float cp = tich_co_huong(a, b, c);
 		if (fabs(cp) < 1e-6) continue;
-		if (i == 0) sign = cp > 0;
-		else if ((cp > 0) != sign)
-			return false;
+		int huong = (cp > 0) ? 1 : -1;
+		if (chieu == 0) chieu = huong;
+		else if (huong != chieu) return false;
 	}
 	return true;
 }

@@ -31,6 +31,14 @@ void cArray::Tao_mang()
 {
 	cout << "Nhap so phan tu trong mang: ";
 	cin >> n;
+	while (cin.fail())
+	{
+		cin.clear();
+		cin.ignore();
+		cout << "Khong hop le! vui long nhap lai!" << endl;
+		cout << "Nhap so phan tu trong mang: ";
+		cin >> n;
+	}
 	srand(time(NULL));
 	a = new int[n];
 	for (int i = 0; i < n; i++)

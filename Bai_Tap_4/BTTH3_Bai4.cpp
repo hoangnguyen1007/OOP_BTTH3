@@ -43,11 +43,11 @@ int main()
         cout << "So nguyen to lon nhat co trong mang la: " << x.tim_snt_max();
     }
     cout << endl;
-    x.sap_xep_giam_dan();
+    x.sap_xep_tang_dan();
     cout << "Mang sau khi sap xep tang dan: ";
     x.Xuat();
     cout << endl;
-    x.sap_xep_tang_dan();
+    x.sap_xep_giam_dan();
     cout << "Mang sau khi sap xep giam dan: ";
     x.Xuat();
 }

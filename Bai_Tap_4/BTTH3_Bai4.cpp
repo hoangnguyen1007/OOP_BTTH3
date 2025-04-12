@@ -4,6 +4,11 @@ int main()
 {
     cArray x;
     x.Tao_mang();
+    if (x.getN() == 0)
+    {
+        cout << "Mang rong!";
+        return 0;
+    }
     cout << "Mang sau khi khoi tao: ";
     x.Xuat();
     cout << endl;
@@ -29,7 +34,7 @@ int main()
         cout << "Phan tu le lon nhat co trong mang la: " << x.tim_le_max();
     }
     cout << endl;
-    if (x.tim_snt_max() == -1)
+    if (x.tim_snt_max() == -2)
     {
         cout << "Khong co so nguyen to nao trong mang";
     }

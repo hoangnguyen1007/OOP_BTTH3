@@ -21,6 +21,11 @@ cArray::cArray(const cArray& m)
 		}
 	}
 }
+//Hàm getter trả về giá trị của biến n
+int cArray::getN()
+{
+	return n;
+}
 //Hàm tạo mảng bằng cách sử dụng hàm random từ 1 đến 100
 void cArray::Tao_mang()
 {

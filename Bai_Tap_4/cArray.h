@@ -8,6 +8,7 @@ private:
 public:
 	cArray();
 	cArray(const cArray&);
+	int getN();
 	void Tao_mang();
 	void Xuat() const;
 	int so_lan_xuat_hien(int x);
